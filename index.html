@@ -11,8 +11,8 @@
   </head>
   <body>
     <header>
-      <div>
-        <nav>
+      <div class="container d-flex">
+        <nav class="d-flex head-nav">
           <a class="logo" href="./index.html" rel="home"> Dudeshape </a>
           <ul class="nav-menu">
             <li><a class="nav-list active" href="./index.html">Home</a></li>
@@ -28,7 +28,7 @@
           </ul>
         </nav>
         <div class="profile-logo">
-          <ul>
+          <ul class="profile-logo-list">
             <li class="profile">
               <a href="">
                 <svg
@@ -70,29 +70,33 @@
     </header>
 
     <main>
-      <section>
-        <div>
-          <h1>Get Your Best Cosmetic Products Here</h1>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy
-          </p>
-          <input type="text" placeholder="Search.." /><svg
-            width="24"
-            height="24"
-          >
-            <use href="./images/icons.svg#search"></use>
-          </svg>
-          <button>Shop Now</button>
+      <section class="main-effective">
+        <div class="container top-blok">
+          <div class="top-text">
+            <h1>Get Your Best Cosmetic Products Here</h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+            </p>
+            <div class="search-wrapper">
+                <input class="search" type="text" placeholder="Search.." />
+                <svg class="search-icon" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                  <use href="./images/icons.svg#search"></use>
+                </svg>
+            </div>              
+            <button class="shop-btn">Shop Now</button>
+          </div>
+          <div class="container">
+            <img src="./images/head.jpg" alt="Photo of the product" />
+          </div>
         </div>
-        <div><img src="./images/head.jpg" alt="Photo of the product" /></div>
-        <biv>
-          <button>
+        <biv class="container sviper">
+          <button  class="sviper-btn">
             <svg width="14" height="26" viewBox="0 0 14 26" fill="none">
               <use href="./images/icons.svg#left"></use>
             </svg>
           </button>
-          <button>
+          <button class="sviper-btn">
             <svg width="14" height="26" viewBox="0 0 14 26" fill="none">
               <use href="./images/icons.svg#right"></use>
             </svg>
@@ -102,36 +106,48 @@
 
       <!--companies-->
       <section>
-        <div>
+        <div class="container">
           <ul>
             <li>
               <div>
-                <svg><use href="./images/icons.svg#airBnb"></use></svg>
+                <svg width="90" height="29" viewBox="0 0 90 29" fill="none">
+                  <use href="./images/icons.svg#airBnb"></use>
+                </svg>
               </div>
             </li>
             <li>
               <div>
-                <svg><use href="./images/icons.svg#fedEx"></use></svg>
+                <svg width="90" height="29" viewBox="0 0 90 29" fill="none">
+                  <use href="./images/icons.svg#fedEx"></use>
+                </svg>
               </div>
             </li>
             <li>
               <div>
-                <svg><use href="./images/icons.svg#google"></use></svg>
+                <svg width="90" height="29" viewBox="0 0 90 29" fill="none">
+                  <use href="./images/icons.svg#google"></use>
+                </svg>
               </div>
             </li>
             <li>
               <div>
-                <svg><use href="./images/icons.svg#hubspot"></use></svg>
+                <svg width="90" height="29" viewBox="0 0 90 29" fill="none">
+                  <use href="./images/icons.svg#hubspot"></use>
+                </svg>
               </div>
             </li>
             <li>
               <div>
-                <svg><use href="./images/icons.svg#microsoft"></use></svg>
+                <svg width="90" height="29" viewBox="0 0 90 29" fill="none">
+                  <use href="./images/icons.svg#microsoft"></use>
+                </svg>
               </div>
             </li>
             <li>
               <div>
-                <svg><use href="./images/icons.svg#walmart"></use></svg>
+                <svg width="90" height="29" viewBox="0 0 90 29" fill="none">
+                  <use href="./images/icons.svg#walmart"></use>
+                </svg>
               </div>
             </li>
           </ul>
@@ -140,9 +156,9 @@
 
       <!--Product-->
       <section id="products">
-        <div>
+        <div class="container">
           <div>
-            <h1>Our Porular Product</h1>
+            <h3>Our Porular Product</h3>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy
@@ -153,11 +169,11 @@
             <svg><use href="./images/icons.svg#frame"></use></svg>
           </a>
         </div>
-        <div>
+        <div class="container">
           <ul>
             <li>
               <img src="./images/productLeft.jpg" alt="Cosmetic product" />
-              <h2>Cosmetic products</h2>
+              <h4>Cosmetic products</h4>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -170,7 +186,7 @@
             </li>
             <li>
               <img src="./images/productRight.jpg" alt="Cosmetic product" />
-              <h2>Cosmetic products</h2>
+              <h4>Cosmetic products</h4>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -187,18 +203,18 @@
 
       <!--Composits-->
       <section>
-        <div>
+        <div class="container">
           <ul>
             <li>
-              <h1>100%</h1>
+              <h2>100%</h2>
               <p>Organic Products</p>
             </li>
             <li>
-              <h1>2M+</h1>
+              <h2>2M+</h2>
               <p>Yearly Sales</p>
             </li>
             <li>
-              <h1>1.9M+</h1>
+              <h2>1.9M+</h2>
               <p>Happy Customar</p>
             </li>
           </ul>
@@ -207,9 +223,9 @@
 
       <!--About-->
       <section id="about">
-        <div>
+        <div class="container">
           <div>
-            <h1>The Perfect Beauty Of You</h1>
+            <h3>The Perfect Beauty Of You</h3>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -228,7 +244,7 @@
             <img src="./images/Rectangle 8.jpg" alt="Cosmetic product" />
           </div>
         </div>
-        <div>
+        <div class="container">
           <div>
             <img src="./images/komentator.jpg" alt="Photo of commentator" />
           </div>
@@ -261,7 +277,7 @@
               type and scrambled it to make a type specimen book
               <svg><use href="./images/icons.svg#closed"></use></svg>
             </p>
-            <h6>Rusmin Islam</h6>
+            <h4>Rusmin Islam</h4>
             <p>Designer</p>
             <ul>
               <li>
@@ -285,12 +301,12 @@
     </main>
 
     <footer id="footer">
-      <div>
-        <h2>Subscribe to Get Our Letest News</h2>
+      <div class="container">
+        <h4>Subscribe to Get Our Letest News</h4>
         <input type="text" placeholder="Enter email" />
         <button>Subscribe</button>
       </div>
-      <div>
+      <div class="container">
         <div>
           <h2>
             <a lass="logo" href="./index.html" rel="home"> Dudeshape </a>
