@@ -5,37 +5,38 @@ body {
   font-family: 'Red Hat Display';
   background-color: #ffffff;
   font-style: normal;
+  margin: 0;
 }
 
 .container {
   /* Phone devices */
-  max-width: 320px;
-  padding-left: 16px;
-  padding-right: 16px;
+  max-width: 1158px;
   margin-left: auto;
   margin-right: auto;
 }
 
 /* Tablet devices */
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding-left: 0;
+    padding-right: 0;
   }
-}
+} */
 
 /* Desktop devices */
-@media screen and (min-width: 1158px) {
+/* @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0;
+    padding-right: 0;
   }
-}
+} */
 
 img {
   display: block;
   height: auto;
-  max-width: 100%;
+  min-width: 100%;
 }
 
 a {
@@ -102,8 +103,8 @@ h6 {
 }
 
 hr {
+  border: 1px solid #eee;
   width: 1240px;
-  height: 1px;
 }
 
 button {
@@ -112,6 +113,11 @@ button {
   background: #402f2c;
   color: #ffffff;
   border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #6fb587;
 }
 
 p {
@@ -124,18 +130,28 @@ p {
 .d-flex {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  padding: 45px 0 70px;
+}
+
+section {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 /* header */
 
-header {
-  flex-shrink: 0;
-  background: var #fff;
-  padding: 40px 0 54px;
-}
-
 header > .container {
   justify-content: space-between;
+}
+
+.head {
+  background: #f9f6f5;
+  max-width: 1440px;
 }
 
 .logo {
@@ -176,22 +192,31 @@ header > .container {
 
 /* main */
 
+.main-photo {
+  width: 796px;
+  height: 609px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.top-photo {
+  position: absolute;
+  right: -150px;
+  min-width: 796px;
+  height: 609px;
+}
+
 .main-effective {
   background-color: #f9f6f5;
-  flex-shrink: 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin: 0 auto;
-  max-width: 1440px;
-  padding: 54px 0 65px;
-
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .top-blok {
   display: flex;
+  position: relative;
+  min-height: 609px;
 }
 
 .top-text {
@@ -199,6 +224,9 @@ header > .container {
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
+
+  max-width: 55%;
+  z-index: 1;
 }
 
 .search-wrapper {
@@ -218,14 +246,22 @@ header > .container {
   border: none;
 }
 
-.search-icon {
+.search-btn {
   position: absolute;
-  top: 50%;
+  top: 8px;
   right: 8px;
-  transform: translateY(-50%);
+  padding: 8px;
+  width: 32px;
+  height: 32px;
+}
 
-  background-color: #402f2c;
-  padding: 10px;
+.search-icon {
+  transform: translateY(-20%);
+}
+
+.search-icon:hover {
+  fill: #6fb587;
+  background-color: #6fb587;
 }
 
 .shop-btn {
@@ -233,6 +269,7 @@ header > .container {
   padding: 16px 32px;
   align-items: flex-start;
   gap: 10px;
+  margin-top: 60px;
 }
 
 .sviper-btn {
@@ -241,8 +278,14 @@ header > .container {
 }
 
 .sviper {
-  padding: 50px 25px;
   background-color: #f9f6f5;
+  position: absolute;
+  width: 145px;
+  height: 138px;
+  top: 77%;
+  left: 44%;
+  display: flex;
+  justify-content: center;
 }
 
 /* companies */
@@ -260,34 +303,179 @@ header > .container {
 
 /* product */
 
-.product-contain {
-  padding-top: 60px;
+.product-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.product-list {
+.product-contain {
+  padding-top: 60px;
+
   display: flex;
   flex-wrap: nowrap;
   gap: 42px;
 }
 
+.descr-text {
+  width: 715px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.descr-link {
+  position: relative;
+  color: #222;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px; /* 125% */
+  text-decoration-line: underline;
+  text-underline-position: from-font;
+  gap: 8px;
+
+  display: flex;
+  align-items: center;
+}
+
+.product-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+  align-items: center;
+}
+
+.elem-btnS {
+  display: flex;
+  gap: 24px;
+}
+
+.elem-btnL,
+.elem-btnR {
+  padding: 16px 32px;
+}
+
+.elem-btnR {
+  border: 1px solid #685a5275;
+  background: none;
+  color: #402f2c;
+}
+
+.price {
+  color: #222;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 32px; /* 106.667% */
+}
+
+.descr-icon {
+  width: 24px;
+  height: 24px;
+}
+
 .product-elem {
   display: flex;
-  border: 1px solid rgba(104, 90, 82, 0.19);
+  border: 1px solid #685a5230;
+  flex-direction: column;
+}
+
+.elem-desc {
+  padding: 32px 20px 32px 32px;
 }
 
 /* Composits */
+#products {
+  padding-bottom: 130px;
+}
 
 .composits {
-  padding: 130px 0 130px;
+  background: #fdf8f5;
+  max-width: 1440px;
+}
+
+.walue {
+  text-decoration-line: underline;
+  text-underline-position: from-font;
+  padding-bottom: 30px;
+}
+
+.components-container {
+  padding: 58px 0;
+}
+
+.components {
+  display: flex;
+  justify-content: space-around;
 }
 
 /* About */
 
 .about {
+  padding-top: 130px;
   display: flex;
   padding-bottom: 130px;
   flex-direction: column;
   gap: 130px;
+}
+
+.about-bloc {
+  display: flex;
+  gap: 32px;
+}
+
+.about-description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.show-btn {
+  max-width: 150px;
+  padding: 16px 32px;
+}
+
+.star-list {
+  display: flex;
+  gap: 12px;
+  padding-top: 12px;
+  padding-bottom: 40px;
+}
+
+.speach {
+  padding-bottom: 80px;
+}
+
+.open {
+  position: absolute;
+  top: 0;
+  left: -17px;
+}
+
+.comment {
+  position: relative;
+}
+
+.end-comment {
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  left: 46px;
+}
+
+.name {
+  padding: 0 0 10px 0.2px;
+}
+
+.jub-position {
+  padding: 0 0 32px 0.2px;
+}
+
+.comment-dedails {
+  display: flex;
+  flex-direction: column;
 }
 
 .comment-sviper-btn {
@@ -303,6 +491,8 @@ header > .container {
 
 .subscribe {
   padding-bottom: 64px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-menu {
@@ -312,8 +502,43 @@ header > .container {
 }
 
 .footer-names {
+  padding-bottom: 50px;
   color: #222;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px; /* 120% */
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.subscribe-mail {
+  width: 368px;
+  height: 55px;
+  border: none;
+  padding: 0 0 0 18px;
+  font-size: 16px;
+}
+
+.subscribe-btn {
+  padding: 10px 20px;
+  position: absolute;
+  font-size: 14px;
+  top: 8px;
+  right: 8px;
+}
+
+.nav-menu-bootom {
+  display: flex;
+  gap: 20px;
+}
+
+address {
+  text-decoration: #222;
+  font-family: 'Red Hat Display';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
 }

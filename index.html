@@ -18,62 +18,64 @@
   </head>
   <body>
     <header>
-      <div class="container d-flex">
-        <nav class="d-flex head-nav">
-          <a class="logo" href="./index.html" rel="home"> Dudeshape </a>
-          <ul class="nav-menu">
-            <li><a class="nav-list active" href="./index.html">Home</a></li>
-            <li>
-              <a class="nav-list" href="#products" rel="products">Products</a>
-            </li>
-            <li>
-              <a class="nav-list" href="#about" rel="about">About Us</a>
-            </li>
-            <li>
-              <a class="nav-list" href="#footer" rel="contact">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="profile-logo">
-          <ul class="profile-logo-list">
-            <li class="profile">
-              <a href="">
-                <svg
-                  width="24"
-                  height="24"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <use href="./images/icons.svg#header-profile"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="buy">
-              <a href="">
-                <svg
-                  width="24"
-                  height="24"
-                  width="20"
-                  height="21"
-                  viewBox="0 0 20 21"
-                  fill="none"
-                >
-                  <use href="./images/icons.svg#header-buy"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="frame">
-              <a href="">
-                <svg width="24" height="24">
-                  <use href="./images/icons.svg#header-menu"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+      <section class="head">
+        <div class="container d-flex">
+          <nav class="head-nav">
+            <a class="logo" href="./index.html" rel="home"> Dudeshape </a>
+            <ul class="nav-menu">
+              <li><a class="nav-list active" href="./index.html">Home</a></li>
+              <li>
+                <a class="nav-list" href="#products" rel="products">Products</a>
+              </li>
+              <li>
+                <a class="nav-list" href="#about" rel="about">About Us</a>
+              </li>
+              <li>
+                <a class="nav-list" href="#footer" rel="contact">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="profile-logo">
+            <ul class="profile-logo-list">
+              <li class="profile">
+                <a href="">
+                  <svg
+                    width="24"
+                    height="24"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <use href="./images/icons.svg#header-profile"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="buy">
+                <a href="">
+                  <svg
+                    width="24"
+                    height="24"
+                    width="20"
+                    height="21"
+                    viewBox="0 0 20 21"
+                    fill="none"
+                  >
+                    <use href="./images/icons.svg#header-buy"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="frame">
+                <a href="">
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#header-menu"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </section>
     </header>
 
     <main>
@@ -87,21 +89,24 @@
             </p>
             <div class="search-wrapper">
               <input class="search" type="text" placeholder="Search.." />
-              <svg
-                class="search-icon"
-                width="15"
-                height="15"
-                viewBox="0 0 15 15"
-                fill="none"
-              >
-                <use href="./images/icons.svg#search"></use>
-              </svg>
+              <button class="search-btn">
+                <svg
+                  class="search-icon"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                >
+                  <use href="./images/icons.svg#search"></use>
+                </svg>
+              </button>
             </div>
             <button class="shop-btn">Shop Now</button>
           </div>
-          <div class="container">
-            <img src="./images/head.jpg" alt="Photo of the product" />
-          </div>
+          <img class="top-photo" src="./images/head.jpg" alt="Photo of the product" />
+
+          <!-- <div class="main-photo">
+          </div> -->
         </div>
         <biv class="container sviper">
           <button class="sviper-btn">
@@ -159,71 +164,73 @@
 
       <!--Product-->
       <section id="products" class="products">
-        <div class="container">
-          <div>
+        <div class="container product-description">
+          <div class="descr-text">
             <h3>Our Porular Product</h3>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy
             </p>
           </div>
-          <a href=""
+          <a class="descr-link" href=""
             >Discover Our Products
-            <svg><use href="./images/icons.svg#frame"></use></svg>
+            <svg class="descr-icon" width="24" height="24">
+              <use href="./images/icons.svg#frame"></use>
+            </svg>
           </a>
         </div>
         <div class="container product-contain">
-          <ul class="product-list">
-            <div class="product-elem">
-              <li>
-                <img src="./images/productLeft.jpg" alt="Cosmetic product" />
-                <h4>Cosmetic products</h4>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy
-                </p>
-                <div>
-                  <button>Buy Now</button>
-                  <button>Add To Cart</button>
-                  <p>$120</p>
+          <div class="product-elem">
+            <img src="./images/productLeft.jpg" alt="Cosmetic product" />
+            <div class="elem-desc">
+              <h4>Cosmetic products</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+              </p>
+              <div class="product-actions">
+                <div class="elem-btnS">
+                  <button class="elem-btnL">Buy Now</button>
+                  <button class="elem-btnR">Add To Cart</button>
                 </div>
-              </li>
+                <span class="price">$120</span>
+              </div>
             </div>
-            <div class="product-elem">
-              <li>
-                <img src="./images/productRight.jpg" alt="Cosmetic product" />
-                <h4>Cosmetic products</h4>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy
-                </p>
-                <div>
-                  <button>Buy Now</button>
-                  <button>Add To Cart</button>
-                  <p>$120</p>
+          </div>
+          <div class="product-elem">
+            <img src="./images/productRight.jpg" alt="Cosmetic product" />
+            <div class="elem-desc">
+              <h4>Cosmetic products</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+              </p>
+              <div class="product-actions">
+                <div class="elem-btnS">
+                  <button class="elem-btnL">Buy Now</button>
+                  <button class="elem-btnR">Add To Cart</button>
                 </div>
-              </li>
+                <span class="price">$120</span>
+              </div>
             </div>
-          </ul>
+          </div>
         </div>
       </section>
 
       <!--Composits-->
       <section class="composits">
-        <div class="container">
-          <ul>
+        <div class="container components-container">
+          <ul class="components">
             <li>
-              <h2>100%</h2>
+              <h2 class="walue">100%</h2>
               <p>Organic Products</p>
             </li>
             <li>
-              <h2>2M+</h2>
+              <h2 class="walue">2M+</h2>
               <p>Yearly Sales</p>
             </li>
             <li>
-              <h2>1.9M+</h2>
+              <h2 class="walue">1.9M+</h2>
               <p>Happy Customar</p>
             </li>
           </ul>
@@ -247,7 +254,7 @@
               Ipsum is simply dummy text of the printing and typesetting
               industry.
             </p>
-            <button>Shop Now</button>
+            <button class="show-btn">Shop Now</button>
           </div>
           <div>
             <img src="./images/Rectangle 8.jpg" alt="Cosmetic product" />
@@ -257,8 +264,9 @@
           <div>
             <img src="./images/komentator.jpg" alt="Photo of commentator" />
           </div>
-          <div>
+          <div class="about-comments">
             <h6>Amazing Cosmetic</h6>
+
             <ul class="star-list">
               <li>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -287,37 +295,56 @@
               </li>
             </ul>
 
-            <p class="comment">
-              <svg width="17" height="15" viewBox="0 0 17 15" fill="none">
-                <use href="./images/icons.svg#open"></use>
-              </svg>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book
-              <svg width="17" height="15" viewBox="0 0 17 15" fill="none">
-                <use href="./images/icons.svg#closed"></use>
-              </svg>
-            </p>
+            <div class="speach">
+              <p class="comment">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen
+                <svg
+                  class="open"
+                  width="17"
+                  height="15"
+                  viewBox="0 0 17 15"
+                  fill="none"
+                >
+                  <use href="./images/icons.svg#open"></use>
+                </svg>
+                <span class="end-comment"
+                  >book
+                  <svg
+                    class="close"
+                    width="17"
+                    height="15"
+                    viewBox="0 0 17 15"
+                    fill="none"
+                  >
+                    <use href="./images/icons.svg#closed"></use>
+                  </svg>
+                </span>
+              </p>
+            </div>
 
-            <h6>Rusmin Islam</h6>
-            <p>Designer</p>
-            <ul class="comment-sviper">
-              <li>
-                <button class="comment-sviper-btn">
-                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                    <use href="./images/icons.svg#buttom-sviperL"></use>
-                  </svg>
-                </button>
-              </li>
-              <li>
-                <button class="comment-sviper-btn">
-                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                    <use href="./images/icons.svg#buttom-sviperR"></use>
-                  </svg>
-                </button>
-              </li>
-            </ul>
+            <div class="comment-dedails">
+              <h6 class="name">Rusmin Islam</h6>
+              <span class="jub-position">Designer</span>
+              <ul class="comment-sviper">
+                <li>
+                  <button class="comment-sviper-btn">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                      <use href="./images/icons.svg#buttom-sviperL"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <button class="comment-sviper-btn">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                      <use href="./images/icons.svg#buttom-sviperR"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -326,10 +353,19 @@
     <footer id="footer" class="footer">
       <div class="container subscribe">
         <h4>Subscribe to Get Our Letest News</h4>
-        <input type="text" placeholder="Enter email" />
-        <button>Subscribe</button>
+        <form class="subscribe-form" action="/signup" method="post">
+          <div class="input-wrapper">
+            <input
+              class="subscribe-mail"
+              type="email"
+              name="email"
+              placeholder="Enter email"
+            />
+            <button type="submit" class="subscribe-btn">Subscribe</button>
+          </div>
+        </form>
       </div>
-      <hr/>
+      <hr />
       <div class="container footer-menu">
         <div>
           <h2>
@@ -343,8 +379,8 @@
         <div>
           <p class="footer-names">Quick Link</p>
           <nav>
-            <ul class="nav-menu">
-              <li><a class="nav-list " href="./index.html">Home</a></li>
+            <ul class="nav-menu-bootom">
+              <li><a class="nav-list" href="./index.html">Home</a></li>
               <li>
                 <a class="nav-list" href="#products" rel="products">Products</a>
               </li>
