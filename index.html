@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dudeshape</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./css/style.css" />
 
     <link rel="icon" type="image/png" href="images/icon.png" />
@@ -79,11 +86,17 @@
               industry. Lorem Ipsum has been the industry's standard dummy
             </p>
             <div class="search-wrapper">
-                <input class="search" type="text" placeholder="Search.." />
-                <svg class="search-icon" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                  <use href="./images/icons.svg#search"></use>
-                </svg>
-            </div>              
+              <input class="search" type="text" placeholder="Search.." />
+              <svg
+                class="search-icon"
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="none"
+              >
+                <use href="./images/icons.svg#search"></use>
+              </svg>
+            </div>
             <button class="shop-btn">Shop Now</button>
           </div>
           <div class="container">
@@ -91,7 +104,7 @@
           </div>
         </div>
         <biv class="container sviper">
-          <button  class="sviper-btn">
+          <button class="sviper-btn">
             <svg width="14" height="26" viewBox="0 0 14 26" fill="none">
               <use href="./images/icons.svg#left"></use>
             </svg>
@@ -105,57 +118,47 @@
       </section>
 
       <!--companies-->
-      <section>
+      <section class="companies">
         <div class="container">
-          <ul>
+          <hr />
+          <ul class="company-list">
             <li>
-              <div>
-                <svg width="90" height="29" viewBox="0 0 90 29" fill="none">
-                  <use href="./images/icons.svg#airBnb"></use>
-                </svg>
-              </div>
+              <svg width="90" height="29" viewBox="0 0 90 29" fill="none">
+                <use href="./images/icons.svg#airBnb"></use>
+              </svg>
             </li>
             <li>
-              <div>
-                <svg width="90" height="29" viewBox="0 0 90 29" fill="none">
-                  <use href="./images/icons.svg#fedEx"></use>
-                </svg>
-              </div>
+              <svg width="84" height="29" viewBox="0 0 85 29" fill="none">
+                <use href="./images/icons.svg#hubspot"></use>
+              </svg>
             </li>
             <li>
-              <div>
-                <svg width="90" height="29" viewBox="0 0 90 29" fill="none">
-                  <use href="./images/icons.svg#google"></use>
-                </svg>
-              </div>
+              <svg width="84" height="29" viewBox="0 0 85 29" fill="none">
+                <use href="./images/icons.svg#google"></use>
+              </svg>
             </li>
             <li>
-              <div>
-                <svg width="90" height="29" viewBox="0 0 90 29" fill="none">
-                  <use href="./images/icons.svg#hubspot"></use>
-                </svg>
-              </div>
+              <svg width="122" height="29" viewBox="0 0 122 29" fill="none">
+                <use href="./images/icons.svg#microsoft"></use>
+              </svg>
             </li>
             <li>
-              <div>
-                <svg width="90" height="29" viewBox="0 0 90 29" fill="none">
-                  <use href="./images/icons.svg#microsoft"></use>
-                </svg>
-              </div>
+              <svg width="111" height="29" viewBox="0 0 111 29" fill="none">
+                <use href="./images/icons.svg#walmart"></use>
+              </svg>
             </li>
             <li>
-              <div>
-                <svg width="90" height="29" viewBox="0 0 90 29" fill="none">
-                  <use href="./images/icons.svg#walmart"></use>
-                </svg>
-              </div>
+              <svg width="80" height="29" viewBox="0 0 80 29" fill="none">
+                <use href="./images/icons.svg#fedEx"></use>
+              </svg>
             </li>
           </ul>
+          <hr />
         </div>
       </section>
 
       <!--Product-->
-      <section id="products">
+      <section id="products" class="products">
         <div class="container">
           <div>
             <h3>Our Porular Product</h3>
@@ -169,40 +172,46 @@
             <svg><use href="./images/icons.svg#frame"></use></svg>
           </a>
         </div>
-        <div class="container">
-          <ul>
-            <li>
-              <img src="./images/productLeft.jpg" alt="Cosmetic product" />
-              <h4>Cosmetic products</h4>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-              </p>
-              <div>
-                <button>Buy Now</button>
-                <button>Add To Cart</button>
-                <p>$120</p>
-              </div>
-            </li>
-            <li>
-              <img src="./images/productRight.jpg" alt="Cosmetic product" />
-              <h4>Cosmetic products</h4>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-              </p>
-              <div>
-                <button>Buy Now</button>
-                <button>Add To Cart</button>
-                <p>$120</p>
-              </div>
-            </li>
+        <div class="container product-contain">
+          <ul class="product-list">
+            <div class="product-elem">
+              <li>
+                <img src="./images/productLeft.jpg" alt="Cosmetic product" />
+                <h4>Cosmetic products</h4>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy
+                </p>
+                <div>
+                  <button>Buy Now</button>
+                  <button>Add To Cart</button>
+                  <p>$120</p>
+                </div>
+              </li>
+            </div>
+            <div class="product-elem">
+              <li>
+                <img src="./images/productRight.jpg" alt="Cosmetic product" />
+                <h4>Cosmetic products</h4>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy
+                </p>
+                <div>
+                  <button>Buy Now</button>
+                  <button>Add To Cart</button>
+                  <p>$120</p>
+                </div>
+              </li>
+            </div>
           </ul>
         </div>
       </section>
 
       <!--Composits-->
-      <section>
+      <section class="composits">
         <div class="container">
           <ul>
             <li>
@@ -222,9 +231,9 @@
       </section>
 
       <!--About-->
-      <section id="about">
-        <div class="container">
-          <div>
+      <section id="about" class="about">
+        <div class="container d-flex about-bloc">
+          <div class="about-description">
             <h3>The Perfect Beauty Of You</h3>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -244,53 +253,67 @@
             <img src="./images/Rectangle 8.jpg" alt="Cosmetic product" />
           </div>
         </div>
-        <div class="container">
+        <div class="container d-flex about-bloc">
           <div>
             <img src="./images/komentator.jpg" alt="Photo of commentator" />
           </div>
           <div>
-            <h6>
-              Amazing Cosmetic
-              <ul>
-                <li>
-                  <svg><use href="./images/icons.svg#star"></use></svg>
-                </li>
-                <li>
-                  <svg><use href="./images/icons.svg#star"></use></svg>
-                </li>
-                <li>
-                  <svg><use href="./images/icons.svg#star"></use></svg>
-                </li>
-                <li>
-                  <svg><use href="./images/icons.svg#star"></use></svg>
-                </li>
-                <li>
-                  <svg><use href="./images/icons.svg#star-half"></use></svg>
-                </li>
-              </ul>
-            </h6>
-            <p>
-              <svg><use href="./images/icons.svg#open"></use></svg>
+            <h6>Amazing Cosmetic</h6>
+            <ul class="star-list">
+              <li>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <use href="./images/icons.svg#star-half"></use>
+                </svg>
+              </li>
+            </ul>
+
+            <p class="comment">
+              <svg width="17" height="15" viewBox="0 0 17 15" fill="none">
+                <use href="./images/icons.svg#open"></use>
+              </svg>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book
-              <svg><use href="./images/icons.svg#closed"></use></svg>
+              <svg width="17" height="15" viewBox="0 0 17 15" fill="none">
+                <use href="./images/icons.svg#closed"></use>
+              </svg>
             </p>
-            <h4>Rusmin Islam</h4>
+
+            <h6>Rusmin Islam</h6>
             <p>Designer</p>
-            <ul>
+            <ul class="comment-sviper">
               <li>
-                <button>
+                <button class="comment-sviper-btn">
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                    <use href="./images/icons.svg#buttom-sviperR"></use>
+                    <use href="./images/icons.svg#buttom-sviperL"></use>
                   </svg>
                 </button>
               </li>
               <li>
-                <button>
+                <button class="comment-sviper-btn">
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                    <use href="./images/icons.svg#buttom-sviperL"></use>
+                    <use href="./images/icons.svg#buttom-sviperR"></use>
                   </svg>
                 </button>
               </li>
@@ -300,16 +323,17 @@
       </section>
     </main>
 
-    <footer id="footer">
-      <div class="container">
+    <footer id="footer" class="footer">
+      <div class="container subscribe">
         <h4>Subscribe to Get Our Letest News</h4>
         <input type="text" placeholder="Enter email" />
         <button>Subscribe</button>
       </div>
-      <div class="container">
+      <hr/>
+      <div class="container footer-menu">
         <div>
           <h2>
-            <a lass="logo" href="./index.html" rel="home"> Dudeshape </a>
+            <a class="logo" href="./index.html" rel="home"> Dudeshape </a>
           </h2>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -317,10 +341,10 @@
           </p>
         </div>
         <div>
-          <h6>Quick Link</h6>
+          <p class="footer-names">Quick Link</p>
           <nav>
             <ul class="nav-menu">
-              <li><a class="nav-list active" href="./index.html">Home</a></li>
+              <li><a class="nav-list " href="./index.html">Home</a></li>
               <li>
                 <a class="nav-list" href="#products" rel="products">Products</a>
               </li>
@@ -331,7 +355,7 @@
           </nav>
         </div>
         <div>
-          <h6>Contact Us</h6>
+          <p class="footer-names">Contact Us</p>
           <address>
             <a href="email:oyasimnaeem@email.com">oyasimnaeem@email.com</a>
             <a href="tel:+123456789">+123456789</a>
