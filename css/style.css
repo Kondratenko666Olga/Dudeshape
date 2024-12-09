@@ -272,15 +272,16 @@ header > .container {
 .sviper-btn {
   background: none;
   border: none;
+  border-radius: 10px;
+  background-color: #f9f6f5;
 }
 
 .sviper {
-  background-color: #f9f6f5;
   position: absolute;
   width: 145px;
   height: 138px;
   top: 77%;
-  left: 44%;
+  left: 43%;
   display: flex;
   justify-content: center;
   z-index: 1;
