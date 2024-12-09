@@ -22,6 +22,7 @@ img {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul {
@@ -46,35 +47,38 @@ p {
 h1 {
   font-size: 56px;
   font-weight: 500;
-  line-height: 70px; /* 125% */
+  line-height: 70px;
 }
 
 h2 {
   font-size: 54px;
   font-weight: 500;
-  line-height: 70px; /* 125% */
+  line-height: 70px;
 }
 
 h3 {
   font-size: 52px;
   font-weight: 500;
-  line-height: 70px; /* 125% */
+  line-height: 70px;
 }
 
 h4 {
   font-size: 40px;
   font-weight: 500;
-  line-height: 60px; /* 150% */
+  line-height: 60px;
 }
 
 h6 {
   font-size: 30px;
   font-weight: 500;
-  line-height: 40px; /* 133.333% */
+  line-height: 40px;
 }
 
-hr {
-  border: 1px solid #eee;
+p {
+  color: #555;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
 }
 
 button {
@@ -83,27 +87,33 @@ button {
   background: #402f2c;
   color: #ffffff;
   border: none;
+
+  border-radius: 5px;
+  padding: 10px 20px;
   cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 button:hover {
   background: #6fb587;
+  color: #ffffff;
 }
 
 svg:hover {
-  border-color: #6fb587;
+  fill: #6fb587;
+  stroke: #6fb587;
+  stroke-width: 2;
 }
 
 a:hover {
   color: #6fb587;
   text-decoration-line: underline;
+  text-underline-position: from-font;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-p {
-  color: #555;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32px; /* 160% */
+hr {
+  border: 1px solid #eee;
 }
 
 .d-flex {
@@ -125,7 +135,9 @@ section {
 /* header */
 
 header > .container {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .head {
@@ -142,15 +154,16 @@ header > .container {
   font-weight: 700;
   line-height: 30px; /* 125% */
   text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-skip-ink: none;
-  text-decoration-thickness: auto;
-  text-underline-offset: auto;
   text-underline-position: from-font;
 }
 
 .nav-menu {
   gap: 40px;
+}
+
+.heder-menu-btn {
+  display: none;
+  visibility: hidden;
 }
 
 .nav-list {
@@ -422,11 +435,12 @@ header > .container {
 .open {
   position: absolute;
   top: 0;
-  left: -17px;
+  left: 0;
 }
 
 .comment {
   position: relative;
+  padding-left: 17px;
 }
 
 .end-comment {
@@ -560,43 +574,46 @@ address {
 
 /* tablet device */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1440px) {
   h1 {
     font-size: 54px;
     font-weight: 500;
     line-height: 60px; /* 125% */
   }
-  
+
   h2 {
     font-size: 50px;
     font-weight: 500;
     line-height: 60px; /* 125% */
   }
-  
+
   h3 {
     font-size: 48px;
     font-weight: 500;
     line-height: 60px; /* 125% */
   }
-  
+
   h4 {
     font-size: 35px;
     font-weight: 500;
     line-height: 50px; /* 150% */
   }
-  
+
   h6 {
     font-size: 30px;
     font-weight: 500;
     line-height: 40px; /* 133.333% */
   }
-  
-  
+
   .container,
   section {
-    max-width: 768px;
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .nav-menu {
+    margin-top: 10px;
   }
 
   .company-list {
@@ -609,7 +626,7 @@ address {
   }
 
   .about {
-    padding: 0;
+    padding: 0 15px;
     gap: 0;
   }
 
@@ -623,12 +640,12 @@ address {
   .about-comments,
   .comment-dedails {
     align-items: center;
+    padding-bottom: 30px;
   }
 
   .speach {
     padding-bottom: 40px;
   }
-
 
   .product-actions {
     flex-direction: column;
@@ -644,16 +661,98 @@ address {
 
 /* phone device */
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) {
   .container,
   section {
-    max-width: 320px;
+    max-width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .companies {
+    padding: 30px 0 30px;
+  }
+  #products {
+    padding-bottom: 30px;
+  }
+
+  .top-blok {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 50px;
+  }
+
+  .walue {
+    padding-bottom: 15px;
   }
 
   .top-photo,
   .sviper {
+    display: none;
     visibility: hidden;
-    padding-left: 15px;
-    padding-right: 15px;
+  }
+
+  .d-flex {
+    display: block;
+    padding: 20px 0 40px;
+  }
+
+  .top-text {
+    max-width: 100%;
+  }
+
+  .shop-btn {
+    margin: 20px 0;
+  }
+
+  .head-nav {
+    display: flex;
+    gap: 50%;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .nav-menu,
+  .profile-logo {
+    display: none;
+    visibility: hidden;
+  }
+
+  .heder-menu-btn {
+    display: block;
+    visibility: visible;
+  }
+  .descr-text {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .subscribe,
+  .footer-menu {
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    padding-bottom: 10px;
+  }
+
+  .footer-description {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container,
+  section {
+    max-width: 320px;
   }
 }
