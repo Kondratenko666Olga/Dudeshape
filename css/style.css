@@ -482,6 +482,15 @@ header > .container {
   background: none;
 }
 
+.comment-sviper-btn:hover {
+  background: #6fb5886e;
+}
+
+.comment-sviper-btn>svg:hover {
+  background: #6fb5886e;
+  fill:#6fb5886e ;
+  border-radius: 50%;
+}
 /* footer */
 
 .footer {
