@@ -201,8 +201,8 @@ header > .container {
 
 .top-photo {
   position: absolute;
-  right: -150px;
-  min-width: 796px;
+  right: -13.4%;
+  min-width: 50%;
   height: 609px;
 }
 
@@ -496,13 +496,44 @@ header > .container {
 }
 
 .footer-menu {
-  padding-top: 60px;
   display: flex;
-  gap: 212px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-text {
+  max-width: 350px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.footer-heders {
+  display: flex;
+}
+
+.footer-logo {
+  padding-bottom: 50px;
+}
+
+.footer-logo > .logo {
+  font-size: 40px;
+}
+
+.contact-Us {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-bootom {
+  display: flex;
 }
 
 .footer-names {
-  padding-bottom: 50px;
+  padding: 25px 0;
   color: #222;
   font-size: 20px;
   font-weight: 500;
@@ -531,14 +562,24 @@ header > .container {
 
 .nav-menu-bootom {
   display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
-address {
-  text-decoration: #222;
-  font-family: 'Red Hat Display';
+address > a {
+  color: #222;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 20px; /* 125% */
+}
+address {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-links > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
 }
