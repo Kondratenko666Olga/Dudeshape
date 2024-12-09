@@ -13,8 +13,11 @@
     />
 
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
 
     <link rel="icon" type="image/png" href="images/icon.png" />
+
+    <script src="./main.js" defer></script>
   </head>
   <body>
     <header>
@@ -115,17 +118,18 @@
           </div>
         </div>
         <img
+          id="slide"
           class="top-photo"
           src="./images/head.jpg"
           alt="Photo of the product"
         />
         <biv class="container sviper">
-          <button class="sviper-btn">
+          <button id="slide-arrow-prev" class="sviper-btn">
             <svg width="14" height="26" viewBox="0 0 14 26" fill="none">
               <use href="./images/icons.svg#left"></use>
             </svg>
           </button>
-          <button class="sviper-btn">
+          <button id="slide-arrow-next" class="sviper-btn">
             <svg width="14" height="26" viewBox="0 0 14 26" fill="none">
               <use href="./images/icons.svg#right"></use>
             </svg>

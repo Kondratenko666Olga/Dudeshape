@@ -191,6 +191,16 @@ header > .container {
   right: 0;
   min-width: 50%;
   height: 609px;
+
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.top-photo.fadeIn {
+  opacity: 1;
+}
+.top-photo.fadeOut {
+  opacity: 0;
 }
 
 .main-effective {
@@ -273,6 +283,7 @@ header > .container {
   left: 44%;
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 
 /* companies */
