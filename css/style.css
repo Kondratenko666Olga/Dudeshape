@@ -91,15 +91,19 @@ button {
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
-  transition: background 0.3s ease, color 0.3s ease;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-button:hover {
+button:hover,
+button:focus {
   background: #6fb587;
   color: #ffffff;
 }
 
-.footer-ico>svg:hover, .profile-ico>svg:hover {
+.footer-ico > svg:hover,
+.profile-ico > svg:hover,
+.footer-ico > svg:focus,
+.profile-ico > svg:focus {
   fill: #6fb587;
   stroke: #6fb587;
   stroke-width: 2;
@@ -486,9 +490,9 @@ header > .container {
   background: #6fb5886e;
 }
 
-.comment-sviper-btn>svg:hover {
+.comment-sviper-btn > svg:hover {
   background: #6fb5886e;
-  fill:#6fb5886e ;
+  fill: #6fb5886e;
   border-radius: 50%;
 }
 /* footer */
