@@ -99,7 +99,7 @@ button:hover {
   color: #ffffff;
 }
 
-svg:hover {
+.footer-ico>svg:hover, .profile-ico>svg:hover {
   fill: #6fb587;
   stroke: #6fb587;
   stroke-width: 2;
